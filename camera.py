@@ -3,8 +3,7 @@
 #Desc: This scrtipt script..
 
 import cv2 as cv
-from imutils.video.pivideostream import PiVideoStream
-import imutils
+from pi_video_stream import PiVideoStream
 import time
 from datetime import datetime
 import numpy as np
