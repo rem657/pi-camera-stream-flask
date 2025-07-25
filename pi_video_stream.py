@@ -29,9 +29,8 @@ class PiVideoStream:
         self.camera = Picamera2()
 
         # Create a video configuration
-        # We use "main" for the primary stream and specify BGR888 format for OpenCV compatibility.
         config = self.camera.create_video_configuration(
-            main={"size": resolution, "format": "BGR888"},
+            main={"size": resolution, "format": "RGB888"},
             controls={"FrameRate": framerate}
         )
         self.camera.configure(config)
